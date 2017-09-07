@@ -1,0 +1,14 @@
+{
+    "job_specifications": [
+        {
+            "id": "blobjava",
+            "tasks": [
+                {
+                    "image": "adampaternostro/javablob:latest",
+                    "remove_container_after_exit": true,
+                    "command": "java -jar /app/JavaBlob.jar 1mb.txt"
+                }
+           ]
+        }
+    ]
+}
