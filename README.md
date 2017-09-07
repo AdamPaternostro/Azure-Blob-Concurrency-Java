@@ -25,11 +25,11 @@ Blob concurrency test using Java and Docker
 ```
 sudo docker pull alfpark/batch-shipyard:cli-latest
 
-sudo docker run --rm -it -v /home/shipyarduser/pythonblob:/configs -e SHIPYARD_CONFIGDIR=/configs alfpark/batch-shipyard:cli-latest pool add
+sudo docker run --rm -it -v /home/shipyarduser/javablob:/configs -e SHIPYARD_CONFIGDIR=/configs alfpark/batch-shipyard:cli-latest pool add
 
-sudo docker run --rm -it -v /home/shipyarduser/pythonblob:/configs -e SHIPYARD_CONFIGDIR=/configs alfpark/batch-shipyard:cli-latest jobs add --tail stdout.txt
+sudo docker run --rm -it -v /home/shipyarduser/javablob:/configs -e SHIPYARD_CONFIGDIR=/configs alfpark/batch-shipyard:cli-latest jobs add --tail stdout.txt
 
-sudo docker run --rm -it -v /home/shipyarduser/pythonblob:/configs -e SHIPYARD_CONFIGDIR=/configs alfpark/batch-shipyard:cli-latest pool del
+sudo docker run --rm -it -v /home/shipyarduser/javablob:/configs -e SHIPYARD_CONFIGDIR=/configs alfpark/batch-shipyard:cli-latest pool del
 ```
 
 ## To run the test by hand
